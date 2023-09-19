@@ -228,23 +228,43 @@ section .title::after {
   color: crimson;
   background: none;
 }
+.about .about-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.about .about-content .row i {
+  font-size: 25px;
+  color: crimson;
+}
+.about .about-content .info .head {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.about .about-content .row .about-icon {
+  color: #111;
+  background-color: #fff;
+  border: none;
+}
 
 /* Projects */
-.projects,
-.contact {
+
+.contact,
+.skills {
   color: #fff;
   background: #111;
 }
 .projects .title::after {
   content: 'what i did';
-  background: #111;
+  /* background: #111; */
 }
 .projects .title::before {
-  background: #fff;
+  background: #111;
 }
 .projects .projects-content .card {
   width: calc(33% - 20px);
-  background: #222;
+  /* background: #222; */
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
@@ -262,12 +282,17 @@ section .title::after {
 }
 .projects .projects-content .card img {
   border-radius: 6px;
+  width: 280px;
 }
 .projects .projects-content .card .text,
 .skills .skills-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+.projects .host i {
+  font-size: 25px;
+  margin: 8px;
 }
 
 /* Skills */
@@ -287,6 +312,10 @@ section .title::after {
 }
 .skills .title::after {
   content: 'what i know';
+  background: #111;
+}
+.skills .title::before {
+  background: #fff;
 }
 .skills .skills-content .card:hover {
   transform: scale(1.05);

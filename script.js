@@ -25,3 +25,16 @@ $(document).ready(function () {
     $('.menu-btn i').toggleClass('active');
   });
 });
+
+//get in touch
+function sendEmail() {
+  Email.send({
+    Host: 'smtp.gmail.com',
+    Username: 'swathivs1406@gmail.com',
+    Password: 'password',
+    To: 'them@website.com',
+    From: 'you@isp.com',
+    Subject: 'This is the subject',
+    Body: 'And this is the body',
+  }).then((message) => alert(message));
+}
